@@ -14,6 +14,7 @@ const Grid = ({ data, barText, cardbookId, onCardbookClick }) => {
       {data.map((data) => {
         return (
           <CardBook
+            imageUrl={data.imageUrl}
             cardbookId={data.cardbookId}
             data={data}
             onClick={() => handleCardbookClick(data.cardbookId)}
