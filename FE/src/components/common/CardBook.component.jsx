@@ -29,7 +29,7 @@ const ButtonField = styled.button`
 const CardBook = ({ data, cardbookId, imageUrl }) => {
   let bookImage;
 
-  bookImage = "http://localhost:8080"+imageUrl;
+  bookImage = import.meta.env.VITE_API_KEY+imageUrl;
 
   return (
     <CardBookContainer>
