@@ -16,6 +16,7 @@ function LoginPage({}) {
   } = useForm();
 
   const handleLogin = (data) => {
+    console.log("handleLogin 함수가 호출되었습니다.")
     axios
       .post(`${import.meta.env.VITE_API_KEY}/users/login`, data, {
         withCredentials: "true",
@@ -53,7 +54,7 @@ function LoginPage({}) {
               label="비밀번호"
               id="pw"
               type="password"
-              placeholder="******"
+              placeholder="* * * * * *"
               register={register}
             />
             <Button>로그인</Button>
